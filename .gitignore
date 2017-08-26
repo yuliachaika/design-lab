@@ -1,0 +1,14 @@
+
+assets/src/settings/\.DS_Store
+
+assets/src/\.DS_Store
+
+assets/dist/\.DS_Store
+
+\.sass-cache/91bed18b50fb352e6e0533ec9ec5c016147b9f82/style\.scssc
+
+\.sass-cache/053775d8392498d578637b7330f0ce168f9a119e/_typography\.scssc
+
+\.sass-cache/053775d8392498d578637b7330f0ce168f9a119e/normalize\.scssc
+
+\.DS_Store
