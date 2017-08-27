@@ -1,0 +1,16 @@
+@mixin bg($url) {
+	background: url($url) no-repeat center;   //в миксине не должно быть кавычек!!!!!
+	background-size: cover;  
+}
+@mixin btn($bg) {
+	display: inline-block;  //для ссылок, т.к они строчные
+	padding: 0 rem(23); 
+	width: 43.8%;
+	height: 55px;
+	color: #FFF;   
+	background-color: $bg;
+	line-height: 55px; //выравнивание!!!important  
+	text-align: center; 
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase; 
+}

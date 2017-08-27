@@ -12,3 +12,19 @@ assets/dist/\.DS_Store
 \.sass-cache/053775d8392498d578637b7330f0ce168f9a119e/normalize\.scssc
 
 \.DS_Store
+
+\.sass-cache/7cccf8cc3cec376ea250a266f7ca6f9326d9c23a/_hero\.scssc
+
+\.sass-cache/2336bb7679e8b5bd749e95083f7800a7ee4b27fa/_title-text\.scssc
+
+\.sass-cache/2336bb7679e8b5bd749e95083f7800a7ee4b27fa/_grid\.scssc
+
+\.sass-cache/053775d8392498d578637b7330f0ce168f9a119e/_variables\.scssc
+
+\.sass-cache/053775d8392498d578637b7330f0ce168f9a119e/_mixins\.scssc
+
+\.sass-cache/053775d8392498d578637b7330f0ce168f9a119e/_global\.scssc
+
+\.sass-cache/053775d8392498d578637b7330f0ce168f9a119e/_functions\.scssc
+
+assets/dist/style\.css\.map

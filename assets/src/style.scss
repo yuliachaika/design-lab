@@ -1,2 +1,14 @@
 @import 'settings/normalize';
 @import 'settings/typography';
+
+@import 'settings/functions';
+@import 'settings/variables';
+@import 'settings/mixins';
+
+
+@import 'settings/global';
+@import 'general/hero';
+
+@import 'parts/title-text';
+@import 'parts/grid';
+

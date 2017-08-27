@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box; 
+}
+
+.container {
+	max-width: rem(932); //плюс паддинги по бокам!!!! 
+	width: 100%;
+	padding: 0 rem(15); 
+	margin: 0 auto; 
+	 
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; 
+}
+a {
+	text-decoration: none; 
+}

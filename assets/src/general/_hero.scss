@@ -1,0 +1,43 @@
+
+.hero	{
+	height: 100vh;
+	padding-top: 15vh;
+	padding-bottom: 10vh;
+	background-color: #aeb8d0; 
+	@include bg('../img/hero-bg.png');  //находимся в папке где style.css!!!!
+	&__container {
+		height: 100%;
+		@extend .flex-col;
+		align-items: center;
+    	justify-content: space-between;  
+	}
+	&__info-wrap {
+		width: 66.5%;
+		text-align: center;
+		color: $white; 
+	}
+	&__title {
+		font-size: rem(54);
+		margin-bottom: rem(53); 
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 8px; 
+	}
+	&__text {
+		font-size: rem(15);
+		line-height: 2;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+	}
+	&__logo {
+		max-width: rem(67);
+		min-height: rem(66);  
+	}
+	&__scroll {
+		max-width: rem(23);
+		min-height: rem(37); 
+	}
+
+	
+}	

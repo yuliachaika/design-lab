@@ -1,0 +1,41 @@
+.flex {
+	// margin-bottom: 130px; 
+	@extend .flex-row;
+	width: 100%;
+	font-size: 0;
+	&__wrap {
+		margin-bottom: rem(10);
+		padding: 0 rem(5);
+		position: relative;
+		// border: 1px solid red; 
+		&--first {
+		width: 29%;
+		padding-left: 0;	
+		// margin-left: 0; 
+		}
+		&--second {
+			width: 42%; 
+		}
+		&--third {
+			width: 29%;
+			padding-right: 0;
+			// margin-right: 0;
+		}
+	}
+	&__photo {
+		max-width: 100%; 
+		height: auto;
+		display: block; 
+	}
+	&__title {
+		position: absolute;
+		margin: 0;
+		bottom: rem(42);
+		left: rem(44);
+		color: $white; 
+	}
+	}
+
+
+
+
