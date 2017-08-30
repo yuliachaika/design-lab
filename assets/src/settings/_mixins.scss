@@ -2,6 +2,29 @@
 	background: url($url) no-repeat center;   //в миксине не должно быть кавычек!!!!!
 	background-size: cover;  
 }
+@mixin section-border($color) {
+	color: $color;
+	position: relative;
+	border-bottom: 2px solid $color;
+	&::before, &::after {
+			content: "";
+			position: absolute;
+			height: calc(100% - #{rem(($font-size + $line-hight-ratio)/2)});
+			width: rem(240); 
+			bottom: 0;   
+			border-top: 2px solid $color;
+		}
+		&::before {
+			left: 0;
+			border-left: 2px solid $color;
+		}
+		&::after {
+			right: 0;
+			border-right: 2px solid $color;
+		}
+}
+
+
 @mixin btn($bg) {
 	display: inline-block;  //для ссылок, т.к они строчные
 	padding: 0 rem(23); 

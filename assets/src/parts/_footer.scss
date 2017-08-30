@@ -1,0 +1,15 @@
+.footer {
+	&__flex {
+		@extend .flex-row; 
+		justify-content: center; 
+		align-items: center;
+	}
+	&__logo {
+		padding-right: rem(36);   
+	}
+	&__text {
+		color: $black-1;
+		font-size: rem(14);
+		font-weight: 400;
+	}
+}

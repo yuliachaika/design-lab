@@ -1,23 +1,33 @@
 .flex {
 	// margin-bottom: 130px; 
-	@extend .flex-row;
+	
 	width: 100%;
 	font-size: 0;
+	&__row {
+		@extend .flex-row;
+		justify-content: space-between; 
+	}
+	&__link {
+		display: flex;
+		align-items: flex-start;
+		&:hover {
+			opacity: .7;
+			transition: all .3s linear; 
+		}
+	}
 	&__wrap {
 		margin-bottom: rem(10);
-		padding: 0 rem(5);
+		// padding: 0 rem(5);
 		position: relative;
-		// border: 1px solid red; 
 		&--first {
-		width: 29%;
-		padding-left: 0;	
-		// margin-left: 0; 
+			width: calc((100% - 20px)*0.288415);
+			padding-left: 0;	
 		}
 		&--second {
-			width: 42%; 
+			width: calc((100% - 20px)*0.42211); 
 		}
 		&--third {
-			width: 29%;
+			width: calc((100% - 20px)*0.289475);
 			padding-right: 0;
 			// margin-right: 0;
 		}
@@ -35,6 +45,9 @@
 		color: $white; 
 	}
 	}
+
+
+
 
 
 

@@ -14,29 +14,10 @@ $line-hight-ratio: 6;
 	}
 
 	&__info-wrap {
-		position: relative;
+		@include section-border($black-1);
 		@extend .flex-col;
 		align-items: center; 
 		padding: 0 0 rem(29) 0; 
-		border-bottom: 2px solid $black-1;
-		color: $black-1;
-		&::before, &::after {
-			content: "";
-			// display: block;
-			position: absolute;
-			height: calc(100% - #{rem(($font-size + $line-hight-ratio)/2)});
-			width: rem(240); 
-			bottom: 0;   
-			border-top: 2px solid $black-1;
-		}
-		&::before {
-			left: 0;
-			border-left: 2px solid $black-1;
-		}
-		&::after {
-			right: 0;
-			border-right: 2px solid $black-1;
-		}
 		&--bg {
 			border-bottom: 2px solid $white;
 			color: $white; 
@@ -84,7 +65,7 @@ $line-hight-ratio: 6;
 }
 .fieldset {
 	padding: 0;
-	padding-bottom: 30px; 
+	// padding-bottom: 30px; 
 	text-align: center;
 	&--light {
 		border: 2px solid $white;
@@ -124,15 +105,7 @@ $line-hight-ratio: 6;
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.16em; 
-		&--first {
-			margin-bottom: rem(37); 
-		}
-		&--second {
-			margin-bottom: rem(43); 
-		}
-		&--third {
-			margin-bottom: rem(47); 
-		}
+		margin-bottom: rem(40); 
 	}
 	&__icon {
 		color: $black-1; 
@@ -141,26 +114,28 @@ $line-hight-ratio: 6;
 		margin-bottom: rem(40);  
 	}
 	&__text {
+		padding-bottom: rem(92);
 		font-size: rem(16);
 		font-weight: 300;
 		// line-height: rem(26); 
 		line-height: 2; 
 		letter-spacing: .1px;
-		&--first {
-			padding-bottom: rem(110);
-		}
-		&--second {
-			padding-bottom: rem(94);
-		}
-		&--third {
-			padding-bottom: rem(62);
-		}
+		 
 	}
 	&__btn {
 		@include btn($black-1);
-		margin: rem(40) 0;
+		margin: 0 0 rem(40) 0;
 		 
 	}
 
 	
+}
+.services__text {
+	padding-bottom: rem(30);
+}
+.contact__text {
+	padding-bottom: rem(40); 
+	&__btn {
+		 // padding-bottom: rem(50); 
+	}
 }

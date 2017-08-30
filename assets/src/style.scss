@@ -1,7 +1,8 @@
 @import 'settings/normalize';
-@import 'settings/typography';
+
 
 @import 'settings/functions';
+@import 'settings/typography';
 @import 'settings/variables';
 @import 'settings/mixins';
 
@@ -11,4 +12,4 @@
 
 @import 'parts/title-text';
 @import 'parts/grid';
-
+@import 'parts/footer';
